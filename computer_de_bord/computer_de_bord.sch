@@ -1,0 +1,374 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:computer_de_bord-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM7805 U1
+U 1 1 59AEABE8
+P 1850 3550
+F 0 "U1" H 2000 3354 50  0000 C CNN
+F 1 "LM7805" H 1850 3750 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 1850 3550 50  0001 C CNN
+F 3 "" H 1850 3550 50  0001 C CNN
+	1    1850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 59AEAD7B
+P 1050 3500
+F 0 "D1" H 1050 3600 50  0000 C CNN
+F 1 "1N4007" H 1050 3400 50  0000 C CNN
+F 2 "Diodes_THT:D_5W_P5.08mm_Vertical_AnodeUp" H 1050 3500 50  0001 C CNN
+F 3 "" H 1050 3500 50  0001 C CNN
+	1    1050 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 59AEADD8
+P 1300 4050
+F 0 "C1" H 1325 4150 50  0000 L CNN
+F 1 "330nF" H 1325 3950 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1338 3900 50  0001 C CNN
+F 3 "" H 1300 4050 50  0001 C CNN
+	1    1300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 59AEAEC9
+P 2350 4050
+F 0 "C2" H 2375 4150 50  0000 L CNN
+F 1 "100nF" H 2375 3950 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2388 3900 50  0001 C CNN
+F 3 "" H 2350 4050 50  0001 C CNN
+	1    2350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59AEAF05
+P 2700 3700
+F 0 "R1" V 2780 3700 50  0000 C CNN
+F 1 "220" V 2700 3700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 2630 3700 50  0001 C CNN
+F 3 "" H 2700 3700 50  0001 C CNN
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 59AEAF46
+P 2700 4050
+F 0 "D2" H 2700 4150 50  0000 C CNN
+F 1 "LED" H 2700 3950 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 2700 4050 50  0001 C CNN
+F 3 "" H 2700 4050 50  0001 C CNN
+	1    2700 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ATMEGA328P-PU U2
+U 1 1 59AEAA66
+P 4400 4600
+F 0 "U2" H 3650 5850 50  0000 L BNN
+F 1 "ATMEGA328P-PU" H 4800 3200 50  0000 L BNN
+F 2 "Housings_DIP:DIP-28_W7.62mm_LongPads" H 4400 4600 50  0001 C CIN
+F 3 "" H 4400 4600 50  0001 C CNN
+	1    4400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x06 J3
+U 1 1 59AEBE07
+P 7150 4700
+F 0 "J3" H 7150 5350 50  0000 C TNN
+F 1 "Con. externi(+,-,-,+,+,-)" V 7000 4700 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-6pol" H 7150 4075 50  0001 C CNN
+F 3 "" H 7125 5100 50  0001 C CNN
+	1    7150 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 59AEBED8
+P 6450 4200
+F 0 "R3" V 6530 4200 50  0000 C CNN
+F 1 "100k" V 6450 4200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6380 4200 50  0001 C CNN
+F 3 "" H 6450 4200 50  0001 C CNN
+	1    6450 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59AEBF4A
+P 6450 4750
+F 0 "R4" V 6530 4750 50  0000 C CNN
+F 1 "100k" V 6450 4750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6380 4750 50  0001 C CNN
+F 3 "" H 6450 4750 50  0001 C CNN
+	1    6450 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59AEBF7C
+P 6400 5050
+F 0 "R2" V 6480 5050 50  0000 C CNN
+F 1 "10k" V 6400 5050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6330 5050 50  0001 C CNN
+F 3 "" H 6400 5050 50  0001 C CNN
+	1    6400 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 59AEBFB5
+P 6650 5200
+F 0 "R5" V 6730 5200 50  0000 C CNN
+F 1 "100k" V 6650 5200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6580 5200 50  0001 C CNN
+F 3 "" H 6650 5200 50  0001 C CNN
+	1    6650 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 59AEC4C3
+P 650 3850
+F 0 "J1" H 650 4100 50  0000 C TNN
+F 1 "Alimentare(+,-)" V 500 3850 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 650 3625 50  0001 C CNN
+F 3 "" H 625 3850 50  0001 C CNN
+	1    650  3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x04 J2
+U 1 1 59AEC5D9
+P 5350 6650
+F 0 "J2" H 5350 7100 50  0000 C TNN
+F 1 "Con. LCD(-,+,SDA,SCL)" V 5200 6650 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol" H 5350 6225 50  0001 C CNN
+F 3 "" H 5325 6850 50  0001 C CNN
+	1    5350 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 3500 1450 3500
+Wire Wire Line
+	1300 3900 1300 3500
+Connection ~ 1300 3500
+Wire Wire Line
+	2250 3500 3500 3500
+Wire Wire Line
+	2350 3900 2350 3500
+Connection ~ 2350 3500
+Wire Wire Line
+	2700 3550 2700 3500
+Connection ~ 2700 3500
+Wire Wire Line
+	2700 3900 2700 3850
+Wire Wire Line
+	900  3500 850  3500
+Wire Wire Line
+	850  4300 2950 4300
+Wire Wire Line
+	1300 4200 1300 4300
+Connection ~ 1300 4300
+Wire Wire Line
+	2350 4200 2350 4300
+Connection ~ 2350 4300
+Wire Wire Line
+	2700 4200 2700 4300
+Connection ~ 2700 4300
+Wire Wire Line
+	2950 4300 2950 5800
+Wire Wire Line
+	2950 5800 3500 5800
+Wire Wire Line
+	2950 5700 3500 5700
+Connection ~ 2950 5700
+Wire Wire Line
+	6800 5200 6950 5200
+Connection ~ 6400 5200
+Wire Wire Line
+	6300 4900 6500 4900
+Wire Wire Line
+	6500 4900 6500 5000
+Wire Wire Line
+	6500 5000 6950 5000
+Connection ~ 6400 4900
+Wire Wire Line
+	6950 4200 6600 4200
+Wire Wire Line
+	6950 4800 6600 4800
+Wire Wire Line
+	6600 4800 6600 4750
+Wire Wire Line
+	6950 4600 6950 4400
+Wire Wire Line
+	3350 4500 6950 4500
+Connection ~ 6950 4500
+Wire Wire Line
+	5400 4350 5600 4350
+Wire Wire Line
+	5600 4350 5600 5200
+Wire Wire Line
+	5600 5200 6500 5200
+Wire Wire Line
+	6700 4800 6700 4450
+Wire Wire Line
+	6700 4450 5400 4450
+Connection ~ 6700 4800
+Wire Wire Line
+	6700 4200 6700 4350
+Wire Wire Line
+	6700 4350 5750 4350
+Wire Wire Line
+	5750 4350 5750 4550
+Wire Wire Line
+	5750 4550 5400 4550
+Connection ~ 6700 4200
+Wire Wire Line
+	850  3500 850  3750
+Wire Wire Line
+	850  3950 850  4300
+Wire Wire Line
+	3350 5800 3350 6450
+Wire Wire Line
+	3350 6450 5050 6450
+Connection ~ 3350 5800
+Wire Wire Line
+	3250 3500 3250 6250
+Wire Wire Line
+	3250 6250 5250 6250
+Wire Wire Line
+	5250 6250 5250 6450
+Connection ~ 3250 3500
+Wire Wire Line
+	5400 4750 5450 4750
+Wire Wire Line
+	5450 4750 5450 6450
+Wire Wire Line
+	5400 4850 5550 4850
+Wire Wire Line
+	5550 4850 5550 6450
+Wire Wire Line
+	5550 6450 5650 6450
+Wire Wire Line
+	6300 4200 6300 4900
+Connection ~ 6300 4750
+Wire Wire Line
+	6300 4850 2950 4850
+Connection ~ 2950 4850
+Connection ~ 6300 4850
+Wire Wire Line
+	1850 3800 1850 4300
+Connection ~ 1850 4300
+Wire Wire Line
+	3350 4500 3350 3500
+Connection ~ 3350 3500
+Wire Wire Line
+	3500 3500 3500 3800
+$Comp
+L Crystal Y1
+U 1 1 59B01C2F
+P 5700 4150
+F 0 "Y1" H 5700 4300 50  0000 C CNN
+F 1 "16MHz" H 5700 4000 50  0000 C CNN
+F 2 "Crystals:Crystal_HC33-U_Vertical" H 5700 4150 50  0001 C CNN
+F 3 "" H 5700 4150 50  0001 C CNN
+	1    5700 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 59B01D13
+P 6000 3950
+F 0 "C3" H 6025 4050 50  0000 L CNN
+F 1 "22pF" H 6025 3850 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6038 3800 50  0001 C CNN
+F 3 "" H 6000 3950 50  0001 C CNN
+	1    6000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 59B01D8A
+P 6000 4200
+F 0 "C4" H 6025 4300 50  0000 L CNN
+F 1 "22pF" H 6025 4100 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6038 4050 50  0001 C CNN
+F 3 "" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 4000 5850 4000
+Wire Wire Line
+	5500 4000 5500 4100
+Wire Wire Line
+	5500 4100 5400 4100
+Wire Wire Line
+	5450 4300 5850 4300
+Wire Wire Line
+	5450 4300 5450 4200
+Wire Wire Line
+	5450 4200 5400 4200
+Wire Wire Line
+	5850 4000 5850 3950
+Connection ~ 5700 4000
+Wire Wire Line
+	5850 4300 5850 4200
+Connection ~ 5700 4300
+Wire Wire Line
+	6150 4200 6150 3950
+Wire Wire Line
+	6150 4100 6150 4850
+Connection ~ 6150 4850
+Connection ~ 6150 4100
+$EndSCHEMATC
